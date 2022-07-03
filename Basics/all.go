@@ -1,16 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	// Using Hello and print functions
 	fmt.Println("Hello World!")
 
 	// Calling other functions in the main function( Basically all the different basics of GO)
-	fmt.Println("calling in ifelse function")
-	ifelse()
-	fmt.Println("Pointer function incoming")
-	pointer()
+
+	// fmt.Println("calling in ifelse function")
+	// ifelse()
+	// fmt.Println("Pointer function incoming")
+	// pointer()
+
+	strings123()
+
 }
 
 func ifelse() {
@@ -82,9 +89,12 @@ func ifElseif() {
 	}
 }
 
-func strings() {
+func strings123() {
 	var a string
 	a = " i am aditya singh"
+	a1 := "i am tads"
 	fmt.Println(a)
 	//fmt.Println(strings.Split(a, "")[1])
+	strings.Compare(a, a1)
+	fmt.Println(strings.Split(a, "am")[1])
 }

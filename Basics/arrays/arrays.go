@@ -10,6 +10,7 @@ func main() {
 	lengthOfarray()
 	//ellipsis in an array - the number of elements are not specidied in before
 	ellipsisArray()
+	iterateArray()
 }
 
 func declaringArray() {
@@ -64,4 +65,11 @@ func ellipsisArray() {
 	myarray := [...]string{"aditya", "adi", "singh"}
 	fmt.Println(myarray)
 	fmt.Println(len(myarray))
+}
+
+func iterateArray() {
+	myarray := [...]int{1, 2, 3, 4, 5, 6, 7, 8}
+	for x := 0; x < len(myarray); x++ {
+		fmt.Printf("%d\n", myarray[x])
+	}
 }

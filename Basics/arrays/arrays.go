@@ -3,6 +3,16 @@ package main
 import "fmt"
 
 func main() {
+
+	declaringArray()
+	multiDimentionalArray()
+	print2dArray()
+	lengthOfarray()
+	//ellipsis in an array - the number of elements are not specidied in before
+	ellipsisArray()
+}
+
+func declaringArray() {
 	//delaring an array in Go lang
 	myarr := [3]string{"aditya", "is", "TADS"}
 	fmt.Println(myarr)
@@ -24,11 +34,6 @@ func main() {
 
 	var arr123 [2]string
 	fmt.Println(arr123)
-
-	multiDimentionalArray()
-	print2dArray()
-	lengthOfarray()
-
 }
 
 func multiDimentionalArray() {
@@ -53,4 +58,10 @@ func lengthOfarray() {
 	// length of empty array
 	var array1 [2]int
 	fmt.Println(len(array1))
+}
+
+func ellipsisArray() {
+	myarray := [...]string{"aditya", "adi", "singh"}
+	fmt.Println(myarray)
+	fmt.Println(len(myarray))
 }

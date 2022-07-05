@@ -11,6 +11,7 @@ func main() {
 	//ellipsis in an array - the number of elements are not specidied in before
 	ellipsisArray()
 	iterateArray()
+	compareArray()
 }
 
 func declaringArray() {
@@ -73,3 +74,22 @@ func iterateArray() {
 		fmt.Printf("%d\n", myarray[x])
 	}
 }
+
+func compareArray(){
+	myarr:=[3]int{1,2,3}
+	myarr1:=[...]int{1,2,3}
+	myarr2:=[3]int{1,3,4}
+
+	if myarr==myarr1{
+		fmt.Println("Both are same 1 and 2 ")
+	}else if myarr == myarr2 {
+		fmt.Println("Both are same 1 ad 3")
+	}else if myarr1 == myarr2{
+		fmt.Println("Both are same")
+	}else{
+		fmt.Println("all are different")
+	}
+}
+
+func 
+

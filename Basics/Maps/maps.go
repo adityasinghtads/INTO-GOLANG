@@ -66,3 +66,14 @@ func retriveMapData() {
 	value1 := mymap
 	fmt.Println(value1)
 }
+
+func iterateMap() {
+	mymap := map[int]string{
+		1: "Aditya",
+		2: "Singh",
+		3: "TADS",
+	}
+	for key, element := range mymap {
+		fmt.Println(key, "=>", element)
+	}
+}

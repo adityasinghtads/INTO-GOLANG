@@ -104,4 +104,12 @@ func ananymonusStruct() {
 		age:  22,
 	}
 	fmt.Println(aditya)
+
+	// type -2 without variables names just the type of variable
+	type tads struct {
+		int
+		string
+	}
+	a := tads{22, "Thakur Aditya Dhanraj Singh"}
+	fmt.Println(a)
 }

@@ -45,7 +45,7 @@ func callingFunc(y *int) {
 	*y = 99
 }
 
-// *********** Pointers to strct **************
+// ⁡⁣⁢⁣*********** Pointers to strct **************⁡
 type student struct {
 	name string
 	age  int
@@ -63,3 +63,5 @@ func pointerToStruct() {
 	fmt.Println("After change name :", ptr.name)
 	fmt.Println("After change name :", (*ptr).name)
 }
+
+// ********** Double Pointers ***********

@@ -2,15 +2,53 @@ package main
 
 import "fmt"
 
-type Coord struct {
-	x int
-	y int
+type Test struct {
+	a int
+	b int
 }
 
-func main() {
-	a := Coord{7, 5}
-	fmt.Println(a.x - a.y)
+func (x Test) do() int {
+	return x.a - x.b
 }
+func main() {
+	t := Test{8, 3}
+	fmt.Println(t.do())
+}
+
+// type Timer struct {
+// 	id      string
+// 	seconds int
+// }
+
+// func main() {
+// 	var x int
+// 	fmt.Scanln(&x)
+// 	t := Timer{"ABC", x}
+
+// 	reset(&t)
+// 	fmt.Println(t)
+// }
+// func reset(a *Timer) {
+// 	a.seconds = 0
+// }
+
+//*********** Pointer to struct *****
+
+// package main
+
+// import "fmt"
+
+// type Coord struct {
+// 	x int
+// 	y int
+// }
+
+// func main() {
+// 	a := Coord{7, 5}
+// 	p := &a
+// 	fmt.Println(p.x)
+// 	fmt.Println(a.x - a.y)
+// }
 
 // ********** Salary using struct ***********
 

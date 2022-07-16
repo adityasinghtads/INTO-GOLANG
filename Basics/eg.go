@@ -6,15 +6,14 @@ func main() {
 	var f int
 	fmt.Scanln(&f)
 	//your code goes here
-	switch f {
-	i:=f 
-	case i>= 20:
-		fmt.Println("Audible")
-	case i < 20:
-		fmt.Println("Infrasound")
-	case i > 20000:
-		fmt.Println("Ultrasound")
-	case i < 0:
+	switch {
+	case f < 0:
 		fmt.Println("Wrong Input")
+	case f > 20000:
+		fmt.Println("Ultrasound")
+	case f < 20:
+		fmt.Println("Infrasound")
+	default:
+		fmt.Println("Audible")
 	}
 }

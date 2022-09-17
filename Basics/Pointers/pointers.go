@@ -1,11 +1,25 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 func main() {
 	//pointerIntro()
-	pointerToFunc()
-	pointerToStruct()
+	var mystring string
+	mystring = "Green"
+	log.Println("The value of string is ", mystring)
+	changeUsingPointer(&mystring)
+	log.Println("The value of string after the function call is ", mystring)
+
+	// pointerToFunc()
+	// pointerToStruct()
+}
+
+func changeUsingPointer(s *string) {
+	newValue := "Red"
+	*s = newValue
 }
 
 // ⁡⁣⁢⁣********** Intro Pointers in Go *********⁡

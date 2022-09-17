@@ -1,12 +1,56 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 func main() {
 	mapIntro()
 	mapUsingMake()
 	updateMap()
 	retriveMapData()
+	udemymaps()
+	mapsAndStruct()
+
+	// right way to use map
+	myMap := make(map[string]string)
+	myMap["dog"] = "samson"
+	myMap["other-dog"] = "cassie"
+
+	myMap["dog"] = "KOKO"
+
+	log.Println(myMap["dog"])
+	log.Println(myMap["other-dog"])
+
+}
+
+func mapsAndStruct() {
+
+	type User struct {
+		FirstName string
+		LastName  string
+	}
+
+	myMap := make(map[string]User)
+
+	me := User{
+		FirstName: "Aditya",
+		LastName:  "Singh",
+	}
+
+	myMap["me"] = me
+	log.Println(myMap["me"].FirstName)
+	log.Println(myMap["me"].LastName)
+
+}
+
+func udemymaps() {
+	myMap := make(map[string]int)
+	myMap["first"] = 1
+	myMap["second"] = 2
+
+	log.Println(myMap["first"], myMap["second"])
 }
 
 func mapIntro() {

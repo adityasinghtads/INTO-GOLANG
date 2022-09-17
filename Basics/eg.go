@@ -1,19 +1,49 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-type Test struct {
-	a int
-	b int
+type T struct {
+	val int
 }
 
-func (x Test) do() int {
-	return x.a - x.b
+func (p *T) a() {
+	p.val += 1
+}
+func (p T) b() {
+	p.val += 2
 }
 func main() {
-	t := Test{8, 3}
-	fmt.Println(t.do())
+	x := T{5}
+	x.a()
+	x.b()
+	fmt.Println(x.val)
 }
+
+// package main
+
+// import (
+// 	"fmt"
+// )
+
+// type Test struct {
+// 	a int
+// 	b int
+// }
+
+// func (x Test) do() int {
+// 	return x.a - x.b
+// }
+// func main() {
+// 	c := 9
+// 	a := &c
+// 	fmt.Println(&a)
+// 	fmt.Println(*a)
+// 	fmt.Println(a)
+
+// t := Test{8, 3}
+// fmt.Println(t.do())
 
 // type Timer struct {
 // 	id      string

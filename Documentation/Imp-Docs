@@ -1,0 +1,15 @@
+Datatypes in golang 
+uint - Unsigned integer 
+int - signed integer 
+** Qyestion, what is the diference between uint and int
+****
+Boolean 
+Float32 and Float64 
+string 
+
+
+-- data types
+- difference betweem unint and int 
+= float32 and float64 
+Types are bool byte rune etc. 
+

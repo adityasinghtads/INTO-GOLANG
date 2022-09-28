@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Why GoLang, and whynot PHP Node or python. ?
 1. Go is a Comipled Language, Unlke anyother interpreted language, GOlang is really fast 
@@ -13,4 +14,20 @@ Why GoLang, and whynot PHP Node or python. ?
 ⁡⁢⁢⁣What are difference between Array and Slice ? ⁡
 
 
+=======
+Datatypes in golang 
+uint - Unsigned integer 
+int - signed integer 
+** Qyestion, what is the diference between uint and int
+****
+Boolean 
+Float32 and Float64 
+string 
+
+
+-- data types
+- difference betweem unint and int 
+= float32 and float64 
+Types are bool byte rune etc. 
+>>>>>>> 0c3693cf5c03122d16c00c9c77ce4ca8adcdcf58
 

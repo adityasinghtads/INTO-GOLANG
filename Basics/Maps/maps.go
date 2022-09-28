@@ -43,6 +43,14 @@ func mapsAndStruct() {
 	log.Println(myMap["me"].FirstName)
 	log.Println(myMap["me"].LastName)
 
+	var myNewVar float32
+
+	myNewVar = 11.1
+
+	//Maps are immutable
+
+	log.Println(myNewVar)
+
 }
 
 func udemymaps() {

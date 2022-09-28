@@ -75,21 +75,18 @@ func iterateArray() {
 	}
 }
 
-func compareArray(){
-	myarr:=[3]int{1,2,3}
-	myarr1:=[...]int{1,2,3}
-	myarr2:=[3]int{1,3,4}
+func compareArray() {
+	myarr := [3]int{1, 2, 3}
+	myarr1 := [...]int{1, 2, 3}
+	myarr2 := [3]int{1, 3, 4}
 
-	if myarr==myarr1{
+	if myarr == myarr1 {
 		fmt.Println("Both are same 1 and 2 ")
-	}else if myarr == myarr2 {
+	} else if myarr == myarr2 {
 		fmt.Println("Both are same 1 ad 3")
-	}else if myarr1 == myarr2{
+	} else if myarr1 == myarr2 {
 		fmt.Println("Both are same")
-	}else{
+	} else {
 		fmt.Println("all are different")
 	}
 }
-
-func 
-

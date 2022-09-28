@@ -16,7 +16,4 @@ func main() {
 	fmt.Println(mul(2, 2))
 	//mul(2, 2)
 	fmt.Println("End")
-	var intput int
-	fmt.Scanln(&input)
-	fmt.Println(input * 12)
 }

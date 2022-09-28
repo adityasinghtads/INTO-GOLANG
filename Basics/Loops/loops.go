@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 )
 
 func main() {
@@ -60,5 +61,35 @@ func doWhile() {
 }
 
 func forUsingChannel() {
+
+}
+
+// using Underscore in loops in Golang - which basically determines that the same can be left empty.. as shown in the below example
+
+func forWithUnderscore() {
+
+	animals := []string{"ant", "cat", "dog", "Horse"}
+
+	animals1 := make(map[string]string)
+	animals1["dog"] = "Koko"
+
+	var firstLine = "Once upon a time"
+
+	for i, l := range firstLine {
+		log.Println(i, ": ", l)
+	}
+
+	for _, animal := range animals1 {
+		log.Println(animal)
+	}
+
+	log.Println(animals)
+
+	type User struct {
+		FirstName string
+		LastName  string
+		Email     string
+		Age       int
+	}
 
 }

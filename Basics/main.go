@@ -14,4 +14,5 @@ func main() {
 	myVar.TypeName = "Some Name"
 	log.Println(myVar.TypeName)
 	fmt.Println(myVar.TypeName)
+	fmt.Println("Thakur Aditya Dhanraj Singh")
 }

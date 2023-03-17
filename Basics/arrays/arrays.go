@@ -90,3 +90,15 @@ func compareArray() {
 		fmt.Println("all are different")
 	}
 }
+
+func itsAditya() {
+	var aditya string = "Aditya"
+	fmt.Println("Hey hello")
+	fmt.Println(aditya)
+
+	Aditya()
+}
+
+func Aditya() {
+	fmt.Println("Hey this is aditya")
+}
